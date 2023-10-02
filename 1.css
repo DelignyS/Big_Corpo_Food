@@ -1,0 +1,43 @@
+body,
+.container {
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    transition: transform 1.2s;
+}
+body.flip {
+    transform: rotate(360deg);
+}
+.container {
+    background: url("https://www.adweek.com/files/2015_May/iStock-Unfinished-Business-6.jpg")
+        center no-repeat;
+    background-size: cover;
+}
+h1 {
+    padding: 10vw;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: justify;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
